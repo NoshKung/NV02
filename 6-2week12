@@ -2,9 +2,9 @@
 int main()
 {
  int a,b;
- printf("1 number : ");
+ printf("Input digit from : ");
  scanf("%d",&a);
- printf("2 number : ");
+ printf("Input digit to : ");
  scanf("%d",&b);
  
  while ( a <= b)
@@ -13,5 +13,4 @@ int main()
   printf("%3d\t", a);
   a++;
 }
-printf("end : ");
 }
