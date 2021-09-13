@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+int marks;
+int i,x=1;
+
+while (x <= 5) {
+printf("Enter ferequency : ");
+scanf("%d", &marks);
+x++;
+
+for(i = 0;i<marks;i++){
+    printf(" %c",'*');
+}
+printf("\n\n");
+}
+}
