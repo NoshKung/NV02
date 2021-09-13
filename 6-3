@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main()
+{
+ 
+ char name[10],gender;
+ int x=1,age,roa1 = 0, roa2 = 0, roa3 = 0, roa4 =0, roa5 = 0; 
+ int M = 0,F = 0;
+
+while (x <= 5) {
+ printf("Enter name : ");
+ scanf("%s",&name[10]);
+ printf("gender : ");
+ scanf("%s",&gender);
+ printf("age : ");
+ scanf("%d",&age);
+ printf("\n");
+x++;
+if (gender == 'M'){M++;}
+else if (gender == 'F'){F++;}
+
+if (age >= 41){roa5++;}
+else if (age >= 31){roa4++;}
+else if (age >= 26){roa3++;}
+else if (age >= 21){roa2++;}
+else if (age >= 18){roa1++;}
+
+}
+printf("Amount of male = %d person\n",M);
+printf("Amount of female = %d person\n\n",F);
+
+printf("=== Range of age ===\n");
+
+printf("18 - 20 = %d person\n",roa1);
+printf("21 - 25 = %d person\n",roa2);
+printf("26 - 30 = %d person\n",roa3);
+printf("31 - 40 = %d person\n",roa4);
+printf("41+ = %d person\n",roa5);
+
+return 0;
+}
