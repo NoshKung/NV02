@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int m,y,c ;
+    int a =  10, b = 2;
+    float ans;
+    
+    while (m != 5){
+        
+        printf("=== Menu ===\n");
+        printf("1.Add\n");
+        printf("2.subtract\n");
+        printf("3.Multiply\n");
+        printf("4.Devide\n");
+        printf("5.EXIT\n");
+        printf("Select =  ");
+        scanf("%d",&m);
+
+    if (m==1){printf("Answer : %d ", a + b); printf("\n\n");}
+    else if(m==2){printf("Answer : %d ", a - b); printf("\n\n");}
+    else if(m==3){printf("Answer : %d ", a * b); printf("\n\n");}
+    else if(m==4){printf("Answer : %d ", a / b); printf("\n\n");}
+    else if (m == 5){printf("End of program");}
+    else if (m>=6){printf("Invalid input"); printf("\n\n");
+    for (c = 1;c <= 500000000;c++){if(c==500000000){system("clear");}}}
+
+    if (m>=1 && m <= 4 ){
+    printf("พิมพ์ 0 เพื่อเลือกใหม่ =  ");
+    scanf("%d",&y);system("clear");}
+    else if (y==0){system("clear");}
+
+    
+}
+}
