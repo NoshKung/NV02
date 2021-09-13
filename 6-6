@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  int c;
+
+  while (c < 999){
+  printf("Enter digit : ");
+  scanf("%d",&c);
+
+  printf("\n\t OCT = %o, \tHEX = \t%X\n\n",c,c);
+
+  }
+}
