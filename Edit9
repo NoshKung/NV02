@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+    int x=1,Q1[10],M1[10],F1[10],i; 
+    char name[10] [10],agi;
+    char B1 = 'B' ,B2 = '+';
+
+    system("clear");
+    for(i = 1;i<=1;i++){
+    printf("\nคนที่ %d\n",i);
+    printf("name : ");
+    scanf("%s",name[i]);
+    printf("Quiz : ");
+    scanf("%d",&Q1[i]);
+    printf("MID : ");
+    scanf("%d",&M1[i]);
+    printf("FIN : ");
+    scanf("%d",&F1[i]);
+    system("clear");
+    printf("\n");
+    
+    }
+    printf("==================================================================\n");
+    printf("            Quiz    MID     FIN     Total    Grade\n");
+    printf("  Name      (20)    (20)    (60)    (100)\n");
+    printf("==================================================================\n");
+    for(i = 1;i<=1;i++){
+    int ag = (Q1[i] + M1[i] + F1[i]);
+
+    if (ag >= 80 ){agi = 'A';}
+else if (ag >= 75){agi = B1;}
+else if (ag >= 75){B2 = '+';}
+else if (ag >= 70){agi = 'B';}
+else if (ag >= 65){agi ='c';}
+else if (ag >= 65){B2 = '+';}
+else if (ag >= 60){agi = 'C';}
+else if (ag >= 55){agi = 'D';}
+else if (ag >= 55){B2 = '+';}
+else if (ag >= 51){agi = 'D';}
+else if (ag >= 0){agi = 'F';}
+
+    printf("%d.%5s%8d%8d%8d%8d%8c%c\n",i,name[i] , Q1[i], M1[i], F1[i],Q1[i] + M1[i] + F1[i],agi,B2);
+    }
+}
