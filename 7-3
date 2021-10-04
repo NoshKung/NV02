@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+int i=1 , k=0 ; 
+char key[30] ,key1[] = "n123";
+system("clear");
+  while (strcmp (key,key1) && k != 3){
+  printf("Eter password : ");
+  scanf ("%s",key);
+
+  k++ ;
+
+if (strcmp (key,key1) == 0 && k <= 3)
+{printf("===>>>>>> OK! You login to the system...\n\n");}
+else if ( k <= 2) {printf("Wrong...please try again\n\n");}
+else if ( k >= 3){printf("System halt!!!!!!\n\n");}
+  }
+  }
+  
